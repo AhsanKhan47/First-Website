@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>FRM</title>
+    <style>
+        body{background-color:whitesmoke;}
+    </style>
+    </head>
+    <body>
+        <h1>FORM</h1>
+       <form action="http://www.example.com/login.php">
+        <fieldset><legend>Personal Info</legend>
+        <p>First Name:
+            <input type="text" name="firstname" size="30" maxlenght="15"required/>
+            <br /><br />
+           Last Name:
+           <input type="text" name="lastname" size="30" maxlenght="15"required/>
+        </p>
+        <p>Gender:
+           <label> <input type="radio" name="gender" value="men" checked required/>Male</label>
+           <label> <input type="radio" name="gender" value="wmen"required/>Female</label>
+        </p>
+        <p>Date Of Birth:</p>
+        <input type="date" name="dob"/>
+        <p>Enter your email:
+            <input type="text" name="email" size="25" maxlenght="13"required/>
+        </p>
+        <p>Password:
+            <input type="password" name="password" size="31" maxlenght="15"required/>
+        </p>
+        <p>Re-enter Password:
+            <input type="password" name="password" size="23" maxlenght="15"required/>
+        </fieldset></p>
+        <fieldset><p>Nationality
+            <select>
+                <option>Pakistan</option>
+                <option>China</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Afghanistan</option>
+                <option>Canada</option>
+                <option>Russia</option>
+            </select>
+        </p>
+        <p>Interest:
+            <label><input type="checkbox" name="interest" value="men"/>Games</label>
+            <label><input type="checkbox" name="interest" value="kids"/>Politics</label>
+            <label><input type="checkbox" name="interest" value="elders"/>News</label>
+            <label><input type="checkbox" name="interest" value="Womens"/>shopping</label>
+            <label><input type="checkbox" name="interest" value="Womens"/>Cooking</label>
+        </p>
+        <p>Please Enter your Website:
+            <input type="url" size="23" maxlenght="15" required/>
+        </p>
+        <p>
+            Comments:
+        </p>
+
+            <textarea name="comments" rows="8" cols="40">Be the First to Comment...</textarea></fieldset>
+        <p>Upload a Profile Picture:</p>
+        <input type="file" name="dp"/>
+        <br /><br />
+
+        <input type="submit" value="upload"/>
+        <input type="submit"/>
+        </form>
+
+    </body>
+    </html>
